@@ -1,8 +1,6 @@
-var app = angular.module('booksInventoryApp', []);
-
 app.controller('booksCtrl', function($scope, $http) {
 
-  $http.get("https://whispering-woodland-9020.herokuapp.com/getAllBooks")
+  $http.get("https://s3-us-west-2.amazonaws.com/joshuamfernandes/california.json")
     .then(function(response) {
       $scope.data = response.data;
     });
