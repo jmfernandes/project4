@@ -1,6 +1,6 @@
 app.controller('booksCtrl', function($scope, $http) {
 
-  $http.get("https://s3-us-west-2.amazonaws.com/joshuamfernandes/california.json")
+  $http.get("https://population.datanab.net/united_states/california_json")
     .then(function(response) {
       $scope.data = response.data;
     });
