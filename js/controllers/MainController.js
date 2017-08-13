@@ -11,3 +11,4 @@ success(function(status) {
 error(function(status) {
     //your code when fails
 });
+};
