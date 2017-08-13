@@ -4,8 +4,8 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
+  margin: 10;
+  padding: 10; }
 
 /**
  * Basic styling
@@ -225,7 +225,7 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #828282;
   padding: 30px 0; }
 
 .footer-heading {
@@ -249,15 +249,15 @@ pre {
 
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
+  width: calc(35% - (30px / 5)); }
 
 .footer-col-2 {
   width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
+  width: calc(20% - (30px / 5)); }
 
 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
+  width: calc(45% - (30px / 5)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -277,16 +277,16 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 70px 0; }
 
 .page-heading {
-  font-size: 20px; }
+  font-size: 50px; }
 
 .post-list {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 70px; }
 
 .post-meta {
   font-size: 14px;
@@ -300,10 +300,10 @@ pre {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 70px; }
 
 .post-title {
-  font-size: 42px;
+  font-size: 72px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
