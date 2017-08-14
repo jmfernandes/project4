@@ -1,10 +1,10 @@
-app.controller('booksCtrl', function($scope, $http) {
-  $scope.method = 'GET';
-  $scope.url = "https://s3-us-west-2.amazonaws.com/joshuamfernandes/california.json";
-  $http({method:$scope.method, url:$scope.url})
+app.controller('booksCtrl', ['$scope','$http', function(s, h) {
+  s.method = 'GET';
+  s.url = "https://s3-us-west-2.amazonaws.com/joshuamfernandes/california.json";
+  h({method:s.method, url:s.url})
     .then(function(response) {
-      $scope.data = response.data;
+      s.data = response.data;
     }, function(response){
-      $scope.data = response.data || 'Request failed';
+      s.data = response.data || 'Request failed';
     });
-});
+}]);
